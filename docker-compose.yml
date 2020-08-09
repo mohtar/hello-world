@@ -1,0 +1,12 @@
+version: "2.3"
+
+services:
+  hello-world:
+    build:
+      context: .
+    command: poetry run python hello_world/server.py 80
+    environment:
+      PYTHONUNBUFFERED: 1
+      PYTHONPATH: .
+    ports:
+      - '8080:80'
