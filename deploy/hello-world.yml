@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: mohtar/hello-world:master-b3ce77fe1b314d9faf80e2397c01370bfe6aac1b
+        image: mohtar/hello-world:master-ef89a92962f8119683469d989a2f50cff8b798b6
         args: [poetry, run, python, hello_world/server.py, '80']
         env:
         - name: PYTHONUNBUFFERED
