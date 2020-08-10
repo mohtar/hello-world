@@ -4,7 +4,6 @@ kind: Deployment
 metadata:
   name: hello-world
   annotations:
-    flux.weave.works/automated: 'true'
     flux.weave.works/tag.hello-world: 'glob:master-*'
 spec:
   replicas: 1
